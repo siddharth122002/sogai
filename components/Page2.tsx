@@ -5,12 +5,12 @@ import Bananas from "./Bananas";
 
 function Page2() {
   return (
-    <div className="bg-black">
+    <div className="bg-red-800">
       <div
         style={{
           clipPath: "polygon(5% 0, 95% 0, 100% 5%, 100% 100%, 0 100%, 0 5%)",
         }}
-        className="bg-[#182A2A] relative "
+        className="bg-green-200 relative "
       >
         {/* globe */}
         <Globe />
