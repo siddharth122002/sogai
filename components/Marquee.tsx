@@ -36,7 +36,8 @@ function Marquee() {
       ref={marqRef}
       className="md:mt-80 mt-28 uppercase font-sogai text-[8.99vw] whitespace-nowrap"
     >
-      Current state of ai — Current state of ai — Current state of ai
+      Current state of ai — Current state of ai — Current state of ai — Current
+      state of ai —
     </div>
   );
 }

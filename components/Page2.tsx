@@ -5,7 +5,7 @@ import Bananas from "./Bananas";
 
 function Page2() {
   return (
-    <div className="bg-black w-full">
+    <div className="bg-black w-full h-full">
       <div
         style={{
           clipPath: "polygon(5% 0, 95% 0, 100% 5%, 100% 100%, 0 100%, 0 5%)",
