@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Page1 from "@/components/Page1";
 import Page2 from "@/components/Page2";

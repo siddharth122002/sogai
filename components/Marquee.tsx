@@ -6,31 +6,31 @@ function Marquee() {
   let xPercent = 0;
   let direction = -1;
   const marqRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    gsap.to(marqRef.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 0,
-        scrub: 0.25,
-        end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
-      },
-      x: "-500px",
-    });
-    requestAnimationFrame(animate);
-  }, []);
-  const animate = () => {
-    if (xPercent < -100) {
-      xPercent = 0;
-    } else if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(marqRef.current, {
-      xPercent: xPercent,
-    });
-    xPercent += 0.2 * direction;
-    requestAnimationFrame(animate);
-  };
+  // useEffect(() => {
+  //   gsap.to(marqRef.current, {
+  //     scrollTrigger: {
+  //       trigger: document.documentElement,
+  //       start: 0,
+  //       scrub: 0.25,
+  //       end: window.innerHeight,
+  //       onUpdate: (e) => (direction = e.direction * -1),
+  //     },
+  //     x: "-500px",
+  //   });
+  //   requestAnimationFrame(animate);
+  // }, []);
+  // const animate = () => {
+  //   if (xPercent < -100) {
+  //     xPercent = 0;
+  //   } else if (xPercent > 0) {
+  //     xPercent = -100;
+  //   }
+  //   gsap.set(marqRef.current, {
+  //     xPercent: xPercent,
+  //   });
+  //   xPercent += 0.2 * direction;
+  //   requestAnimationFrame(animate);
+  // };
   return (
     <div
       ref={marqRef}

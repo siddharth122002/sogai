@@ -12,13 +12,10 @@ function Page2() {
         }}
         className="bg-green-200 relative "
       >
-        {/* globe */}
         <Globe />
-        {/* to come above globe */}
         <div className="relative  overflow-x-hidden">
-          {/* marquee */}
           <Marquee />
-          {/* grid */}
+
           <Bananas />
         </div>
       </div>
