@@ -10,7 +10,7 @@ function Page2() {
         style={{
           clipPath: "polygon(5% 0, 95% 0, 100% 5%, 100% 100%, 0 100%, 0 5%)",
         }}
-        className="bg-[#182A2A] min-h-[100vh] relative "
+        className="bg-[#182A2A] min-h-[100dvh] relative "
       >
         {/* globe */}
         <Globe />
