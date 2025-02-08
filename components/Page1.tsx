@@ -4,7 +4,7 @@ import Page1Text from "./P1Text";
 
 function Page1() {
   return (
-    <div className="w-full h-screen ">
+    <div className="w-full h-[100vh] ">
       <Page1Text />
       <Image
         src={
