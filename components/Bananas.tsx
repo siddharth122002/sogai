@@ -4,19 +4,19 @@ import Image from "next/image";
 import React from "react";
 
 function Bananas() {
-  useGSAP(
-    () => {
-      gsap.to(".bananas", {
-        filter: "blur(0px)",
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".bananas",
-        },
-      });
-    },
-    { dependencies: [], revertOnUpdate: true }
-  );
+  // useGSAP(
+  //   () => {
+  //     gsap.to(".bananas", {
+  //       filter: "blur(0px)",
+  //       duration: 1,
+  //       ease: "power2.out",
+  //       scrollTrigger: {
+  //         trigger: ".bananas",
+  //       },
+  //     });
+  //   },
+  //   { dependencies: [], revertOnUpdate: true }
+  // );
   return (
     <div className="mt-16 md:flex justify-between  w-full ">
       <h3 className="md:w-1/2 w-full  font-tm uppercase text-2xl text-[#EEE2CE] ml-8">
