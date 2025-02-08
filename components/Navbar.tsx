@@ -24,70 +24,70 @@ function Navbar() {
     return () => clearInterval(timer);
   }, []);
 
-  useGSAP(
-    () => {
-      if (refAnimate.current) {
-        if (playing) {
-          gsap.to(refAnimate.current, {
-            y: 0,
-            // duration: 0.5,
-            ease: "power2.inOut",
-          });
-        } else {
-          gsap.to(refAnimate.current, {
-            y: -28,
-            // duration: 0.5,
-            ease: "power2.inOut",
-          });
-        }
-      }
-    },
-    { dependencies: [playing] }
-  );
-  useGSAP(
-    () => {
-      if (refAnimate.current) {
-        if (playing) {
-          const tl = gsap.timeline({
-            repeat: -1,
-          });
-          tl.to(".long", {
-            height: 23,
-            duration: 0.5,
-            ease: "power2.inOut",
-          });
-          tl.to(".long", {
-            height: 5,
-            duration: 0.5,
-            ease: "power2.inOut",
-          });
-        }
-      }
-    },
-    { dependencies: [playing], revertOnUpdate: true }
-  );
-  useGSAP(
-    () => {
-      if (refAnimate.current) {
-        if (playing) {
-          const tl = gsap.timeline({
-            repeat: -1,
-          });
-          tl.to(".short", {
-            height: 15,
-            duration: 0.5,
-            ease: "power1.inOut",
-          });
-          tl.to(".short", {
-            height: 5,
-            duration: 1,
-            ease: "power1.inOut",
-          });
-        }
-      }
-    },
-    { dependencies: [playing], revertOnUpdate: true }
-  );
+  // useGSAP(
+  //   () => {
+  //     if (refAnimate.current) {
+  //       if (playing) {
+  //         gsap.to(refAnimate.current, {
+  //           y: 0,
+  //           // duration: 0.5,
+  //           ease: "power2.inOut",
+  //         });
+  //       } else {
+  //         gsap.to(refAnimate.current, {
+  //           y: -28,
+  //           // duration: 0.5,
+  //           ease: "power2.inOut",
+  //         });
+  //       }
+  //     }
+  //   },
+  //   { dependencies: [playing] }
+  // );
+  // useGSAP(
+  //   () => {
+  //     if (refAnimate.current) {
+  //       if (playing) {
+  //         const tl = gsap.timeline({
+  //           repeat: -1,
+  //         });
+  //         tl.to(".long", {
+  //           height: 23,
+  //           duration: 0.5,
+  //           ease: "power2.inOut",
+  //         });
+  //         tl.to(".long", {
+  //           height: 5,
+  //           duration: 0.5,
+  //           ease: "power2.inOut",
+  //         });
+  //       }
+  //     }
+  //   },
+  //   { dependencies: [playing], revertOnUpdate: true }
+  // );
+  // useGSAP(
+  //   () => {
+  //     if (refAnimate.current) {
+  //       if (playing) {
+  //         const tl = gsap.timeline({
+  //           repeat: -1,
+  //         });
+  //         tl.to(".short", {
+  //           height: 15,
+  //           duration: 0.5,
+  //           ease: "power1.inOut",
+  //         });
+  //         tl.to(".short", {
+  //           height: 5,
+  //           duration: 1,
+  //           ease: "power1.inOut",
+  //         });
+  //       }
+  //     }
+  //   },
+  //   { dependencies: [playing], revertOnUpdate: true }
+  // );
 
   return (
     <div className="fixed text-[#FBF6C1] w-full mix-blend-difference top-0 left-0 font-sogai z-50">

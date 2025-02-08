@@ -4,18 +4,18 @@ import Image from "next/image";
 import React from "react";
 
 function Page1Text() {
-  useGSAP(
-    () => {
-      gsap.to(".dot", {
-        opacity: 0,
-        repeat: -1,
-        duration: 0.9,
-        ease: "power1.inOut",
-        repeatDelay: 0.7,
-      });
-    },
-    { dependencies: [], revertOnUpdate: true }
-  );
+  // useGSAP(
+  //   () => {
+  //     gsap.to(".dot", {
+  //       opacity: 0,
+  //       repeat: -1,
+  //       duration: 0.9,
+  //       ease: "power1.inOut",
+  //       repeatDelay: 0.7,
+  //     });
+  //   },
+  //   { dependencies: [], revertOnUpdate: true }
+  // );
   return (
     <div className="text-[#FBF6C1] w-full font-sogai  z-10 absolute items-end md:mb-8 bottom-0 left-0 flex justify-between px-8   mb-16">
       <div>
