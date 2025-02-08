@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body, html {
+    overflow-x: hidden;
+  }
 @font-face {
     font-family: 'sogai';
     src: url('/fonts/sogai.woff2') format('woff2');
