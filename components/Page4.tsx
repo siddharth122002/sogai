@@ -187,7 +187,7 @@ function Page4() {
           />
         </div>
         {/* 2images */}
-        <div className="flex justify-between mt-6">
+        <div className="flex justify-between mt-6 gap-2">
           <div
             style={{
               clipPath:
@@ -327,7 +327,7 @@ function Page4() {
           />
         </div>
         {/* 2images */}
-        <div className="flex justify-between mt-6">
+        <div className="flex justify-between mt-6 gap-2">
           <div
             style={{
               clipPath:
@@ -462,7 +462,7 @@ function Page4() {
           />
         </div>
         {/* 2images */}
-        <div className="flex justify-between mt-6">
+        <div className="flex justify-between mt-6 gap-2">
           <div
             style={{
               clipPath:
