@@ -10,10 +10,10 @@ function Page2() {
         style={{
           clipPath: "polygon(5% 0, 95% 0, 100% 5%, 100% 100%, 0 100%, 0 5%)",
         }}
-        className="relative "
+        className="relative bg-[#182A2A]"
       >
         <Globe />
-        <div className="relative bg-[#182A2A] overflow-x-hidden">
+        <div className="relative  overflow-x-hidden">
           <Marquee />
 
           <Bananas />

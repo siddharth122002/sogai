@@ -42,8 +42,8 @@ export default function Home() {
           id="bar"
           className="w-0 h-[5px] bg-[#FBF5C0] fixed top-0 left-0 z-50 mix-blend-difference"
         ></div>
-        {/* <Page1 />
-        <Navbar /> */}
+        {/* <Page1 /> */}
+        <Navbar />
         <Page2 />
         <Page3 />
         <Page4 />
