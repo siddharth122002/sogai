@@ -13,9 +13,8 @@ function Page2() {
         className="relative bg-[#182A2A]"
       >
         <Globe />
-        <div className="relative  overflow-x-hidden">
-          <Marquee />
-
+        <div className="relative overflow-x-hidden">
+          {/* <Marquee /> */}
           <Bananas />
         </div>
       </div>

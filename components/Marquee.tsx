@@ -12,6 +12,7 @@ function Marquee() {
         trigger: document.documentElement,
         start: 0,
         scrub: 0.25,
+        // markers: true,
         end: window.innerHeight,
         onUpdate: (e) => (direction = e.direction * -1),
       },

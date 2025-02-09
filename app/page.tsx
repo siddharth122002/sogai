@@ -36,13 +36,13 @@ export default function Home() {
     { dependencies: [], revertOnUpdate: true }
   );
   return (
-    <>
+    <div className="bg-yellow-200">
       <div className="parent text-[#FBF6C1]">
         <div
           id="bar"
           className="w-0 h-[5px] bg-[#FBF5C0] fixed top-0 left-0 z-50 mix-blend-difference"
         ></div>
-        {/* <Page1 /> */}
+        <Page1 />
         <Navbar />
         <Page2 />
         <Page3 />
@@ -51,6 +51,6 @@ export default function Home() {
         <Page6 />
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
